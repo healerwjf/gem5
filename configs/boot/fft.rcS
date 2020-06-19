@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd benchmarks
+
+echo "Running FFT now..."
+
+./FFT -t -p1
+
+#Gracefully exit M5
+/sbin/m5 exit
